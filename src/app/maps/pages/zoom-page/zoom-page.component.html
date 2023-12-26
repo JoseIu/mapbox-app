@@ -1,0 +1,15 @@
+<div #map class="map"></div>
+
+<div class="buttons">
+  <span class="buttons__span">{{ zoom | number : "2.1-1" }} </span>
+  <button (click)="zoomin()" class="buttons__btn">+</button>
+  <button (click)="zoomout()" class="buttons__btn">-</button>
+</div>
+<div class="location">
+  <span class="location__info"
+    >lat: {{ currentLgLat.lat | number : "2.1-1" }}</span
+  >
+  <span class="location__info"
+    >lng: {{ currentLgLat.lng | number : "2.1-1" }}</span
+  >
+</div>
