@@ -1,0 +1,13 @@
+{
+  "files.autoSave": "off",
+  "workbench.editor.enablePreview": true,
+  "editor.bracketPairColorization.enabled": true,
+  "files.enableTrash": true,
+  "files.simpleDialog.enable": false,
+  "explorer.confirmPasteNative": true,
+  "explorer.enableDragAndDrop": true,
+  "explorer.sortOrder": "default",
+  "explorer.sortOrderLexicographicOptions": "default",
+  "problems.decorations.enabled": true,
+  "material-icon-theme.hidesExplorerArrows": false
+}
