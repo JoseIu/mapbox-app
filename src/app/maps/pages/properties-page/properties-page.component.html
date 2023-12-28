@@ -8,16 +8,13 @@
           [lngLatRef]="house.lngLat"
           class="properties-list__img"
         ></maps-mini-map>
-        <!-- <img
-          class="properties-list__img"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVOtksuNMtBWzFnjdhO9f5jBEf1lzFii2Dc4qg8xBuC01jUzIXVH7vcaFm2K5uiV7rfDc&usqp=CAU"
-          alt=""
-        /> -->
         <div class="properties-list__info">
           <h3 class="properties-list__title">{{ house.title }}</h3>
           <p class="properties-list__description">{{ house.description }}</p>
         </div>
       </article>
+
+      <counter-component></counter-component>
     </div>
   </div>
 </section>

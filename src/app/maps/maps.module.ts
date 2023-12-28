@@ -3,8 +3,9 @@ import { NgModule } from '@angular/core';
 
 import * as mapboxgl from 'mapbox-gl';
 import { enviroment } from 'src/environments/environments';
+import { CounterComponentComponent } from '../alone/components/counter-component/counter-component.component';
+import { SideMenuComponent } from '../alone/components/side-menu/side-menu.component';
 import { MiniMapComponent } from './components/mini-map/mini-map.component';
-import { SideMenuComponent } from './components/side-menu/side-menu.component';
 import { MapsLayoutComponent } from './layout/maps-layout/maps-layout.component';
 import { MapsRoutingModule } from './maps-routing.module';
 import { FullScreenPageComponent } from './pages/full-screen-page/full-screen-page.component';
@@ -16,13 +17,17 @@ import { ZoomPageComponent } from './pages/zoom-page/zoom-page.component';
 @NgModule({
   declarations: [
     MiniMapComponent,
-    SideMenuComponent,
     MapsLayoutComponent,
     FullScreenPageComponent,
     MarkersPageComponent,
     PropertiesPageComponent,
     ZoomPageComponent,
   ],
-  imports: [CommonModule, MapsRoutingModule],
+  imports: [
+    CommonModule,
+    MapsRoutingModule,
+    CounterComponentComponent,
+    SideMenuComponent,
+  ],
 })
 export class MapsModule {}

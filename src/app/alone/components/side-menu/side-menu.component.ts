@@ -1,4 +1,6 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 interface MenuItem {
   icon: string;
   route: string;
@@ -6,7 +8,9 @@ interface MenuItem {
 }
 
 @Component({
-  selector: 'maps-side-menu',
+  selector: 'side-menu',
+  standalone: true,
+  imports: [CommonModule, RouterModule],
   templateUrl: './side-menu.component.html',
   styleUrls: ['./side-menu.component.scss'],
 })
@@ -31,6 +35,11 @@ export class SideMenuComponent {
       icon: 'assets/images/house.svg',
       route: '/maps/properties',
       name: 'Houses',
+    },
+    {
+      icon: 'assets/images/alone.svg',
+      route: '/alone',
+      name: 'Standalone',
     },
   ];
 }
