@@ -5,7 +5,7 @@
     "ng": "ng",
     "envs": "node ./scripts/set-envs.js",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build && node ./scripts/set-envs.js",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
