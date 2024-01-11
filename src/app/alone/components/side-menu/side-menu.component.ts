@@ -36,10 +36,5 @@ export class SideMenuComponent {
       route: '/maps/properties',
       name: 'Houses',
     },
-    {
-      icon: 'assets/images/alone.svg',
-      route: '/alone',
-      name: 'Standalone',
-    },
   ];
 }

@@ -2,8 +2,10 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
 import * as mapboxgl from 'mapbox-gl';
+
+// import { environment } from 'src/environments/environments';
 import { enviroment } from 'src/environments/environments';
-import { CounterComponentComponent } from '../alone/components/counter-component/counter-component.component';
+
 import { SideMenuComponent } from '../alone/components/side-menu/side-menu.component';
 import { MiniMapComponent } from './components/mini-map/mini-map.component';
 import { MapsLayoutComponent } from './layout/maps-layout/maps-layout.component';
@@ -23,11 +25,6 @@ import { ZoomPageComponent } from './pages/zoom-page/zoom-page.component';
     PropertiesPageComponent,
     ZoomPageComponent,
   ],
-  imports: [
-    CommonModule,
-    MapsRoutingModule,
-    CounterComponentComponent,
-    SideMenuComponent,
-  ],
+  imports: [CommonModule, MapsRoutingModule, SideMenuComponent],
 })
 export class MapsModule {}
